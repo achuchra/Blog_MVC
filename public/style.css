@@ -1,0 +1,138 @@
+html {
+	overflow-y: scroll;
+}
+
+html, body, div, span,
+footer, header, nav{
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	background: transparent;
+	font-family: 'Raleway', sans-serif;
+}
+header{
+	background-image: url("images/chairs.jpg");
+	height: 400px;
+	background-repeat: no-repeat;
+    background-size: auto;
+	background-attachment: fixed;
+}
+
+footer{
+    background-image: url("images/footer.jpg");
+	height: 150px;
+	bottom: 0;
+	margin-top: 30px;
+}
+
+.header_content{
+	text-align:center;
+	font-size: 55px;
+	line-height: 95px;
+	font-family: 'Lobster', cursive;
+	opacity: 0.7;
+}
+
+.header_site, .footer_site, .footer_content{
+	text-align: center;
+	line-height: 40px;
+	font-size: 25px;
+	font-family: 'Lobster', cursive;
+	opacity: 0.7;
+}
+
+.footer_content {
+	padding: 15px;
+}
+
+.navi{
+	background-color: rgba(255,255,255,.7);	
+	color: white;
+	list-style: none;
+	letter-spacing: 0.1px;
+	text-align: left;
+	font-size: 13px;
+	margin-top: -29px;
+	
+}
+
+.navi>li{
+	display:inline-block;
+	padding: 2px 20px 2px 20px;
+	text-align: center;
+	line-height: 15px;
+	opacity: 1;
+}
+
+.wybor{
+	width: 150px;
+	margin: 15px;
+}
+
+.filtr {
+	text-align: center;
+}
+.thdata{
+	text-align: right;
+    width: 200px;
+}
+article{
+	text-align: left;
+	margin-left: 50px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	margin-right: 50px;
+}
+
+.ctl {
+	min-height: 60vh;
+}
+.navi>li>a {
+  color: black;
+  text-transform:uppercase;
+  text-decoration: none;
+  letter-spacing: .1em;
+  
+  display: inline-block;
+  padding: 5px;
+  position: relative;
+}
+.navi>li>a:hover:after {
+  width:100%;
+  left: 0;
+}
+.navi>li>a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1.3px;
+  left: 0;
+  position: absolute;
+  background: black;
+  transition: width 1s ease 0s, left 0.5s ease 0s;
+  width: 0;
+}
+
+table {
+	border: 1px solid black;
+	min-width: 95vw;
+}
+
+input[type=submit]{
+	background-color: #D9DDDC;
+	border: none;
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 7px 14px;
+	transition: 0.3s;
+	
+}
+
+input[type=submit]:hover{
+	background-color: #999DA0;
+	box-shadow: 0 0 0 1.5px #D9DDDC;
+}

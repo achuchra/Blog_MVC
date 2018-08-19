@@ -1,0 +1,35 @@
+<?php include VIEW . 'header.phtml'; ?>
+<div class="ctl">
+<article>
+
+    <form method="post" action="" class="filtr">
+        <select class="wybor" name="choose">
+            <option value="1" selected>All</option>
+            <option value="2">Europe</option>
+            <option value="3">Asia</option>
+            <option value="4">America</option>
+        </select>
+        <input type="submit" value="Filter">
+    </form>
+
+<?php
+
+if (array_key_exists('all', $this->view_data)){
+    $table = '';
+
+    foreach ($this->view_data['all'] as $entry) {
+                 $table .= '<table class="wpisy"><thead><tr><th class="thtytul">' . $entry['tytul'] . '</th><th class="thdata">Dodano: ' . $entry['data'] . '</th></tr></thead>
+                             <tbody><tr><td colspan=\"2\">' . $entry['tresc'] . '</td></tr></tbody></table><br/><br/>';
+    }
+
+    $table.='</table>';
+    echo $table;
+
+} else { echo 'nie';}
+
+?>
+    </article>
+
+</div>
+
+<?php include VIEW.'footer.phtml'; ?>
