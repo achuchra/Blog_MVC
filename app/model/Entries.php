@@ -51,7 +51,7 @@ class Entries extends Connect
 
         if ($numRows > 0){
             $data = $result->fetchAll();
-        } else { echo 'lol';}
+        } else { return null;}
 
         return $data;
     }
