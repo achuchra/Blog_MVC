@@ -2,17 +2,16 @@
 <div class="ctl">
 <article>
 
-    <form method="post" action="" class="filtr">
-        <select class="wybor" name="choose">
-            <option value="1" selected>All</option>
-            <option value="2">Europe</option>
-            <option value="3">Asia</option>
-            <option value="4">America</option>
-        </select>
-        <input type="submit" value="Filter">
-    </form>
+    <div class="filter">
+        <button><a href="/home/entries">All entries</a></button>
+        <button><a href="/home/entries/filter=europe">Europe</a></button>
+        <button><a href="/home/entries/filter=asia">Asia</a></button>
+        <button><a href="/home/entries/filter=america">America</a></button>
+    </div>
 
 <?php
+
+
 
 if (array_key_exists('all', $this->view_data)){
     $table = '';

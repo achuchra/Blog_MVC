@@ -121,7 +121,12 @@ table {
 	min-width: 95vw;
 }
 
-input[type=submit]{
+.filter {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+button {
 	background-color: #D9DDDC;
 	border: none;
 	color: black;
@@ -129,10 +134,16 @@ input[type=submit]{
 	cursor: pointer;
 	padding: 7px 14px;
 	transition: 0.3s;
+	margin: 3px;
 	
 }
 
-input[type=submit]:hover{
+button:hover{
 	background-color: #999DA0;
 	box-shadow: 0 0 0 1.5px #D9DDDC;
+}
+
+a {
+	color: black;
+	text-decoration: none;
 }

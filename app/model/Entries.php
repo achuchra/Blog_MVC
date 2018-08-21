@@ -25,7 +25,33 @@ class Entries extends Connect
 
         if ($numRows > 0){
             $data = $result->fetchAll();
-        }
+        } else { return null; }
+
+        return $data;
+    }
+
+    public function getAsia()
+    {
+        $pdo = 'SELECT * FROM wpisy WHERE kategoria = "Asia" ORDER BY data DESC';
+        $result = $this->connect()->query($pdo);
+        $numRows = $result->rowCount();
+
+        if ($numRows > 0){
+            $data = $result->fetchAll();
+        } else { return null; }
+
+        return $data;
+    }
+
+    public function getAmerica()
+    {
+        $pdo = 'SELECT * FROM wpisy WHERE kategoria = "America" ORDER BY data DESC';
+        $result = $this->connect()->query($pdo);
+        $numRows = $result->rowCount();
+
+        if ($numRows > 0){
+            $data = $result->fetchAll();
+        } else { echo 'lol';}
 
         return $data;
     }
